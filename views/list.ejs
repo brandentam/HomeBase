@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel = "stylesheet" href = "/css/styles.css" />
+  </head>
+  <body>
+
+<div id = "rightbox">
+  <h1 class = "cityName"><%=city%></h1>
+  <h3 class = "weatherp"><%=cityTemp%> °C</h3>
+  <h3 class = "weatherp"><%=cityCond%></h3>
+  <img src = <%=imageURL%> />
+</p>
+</div>
+
+<div id = leftbox>
+  <h1 id = "welcomeMessage"> Welcome, <%=name%>. </h1>
+</div>
+
+
+
+
+    <div class ="box" id = "heading">
+      <h1><%= kindOfDay %></h1>
+      </div>
+
+    <div class = "box">
+
+
+
+      <% newListItems.forEach(function(item){ %>
+        <form action = "/delete" method = "post">
+        <div class = "item">
+          <input type = "checkbox" name = "checkbox" value= "<%=item._id%>" onChange = "this.form.submit()"/>
+          <p> <%= item.name %></p>
+      </div>
+
+      </form>
+    <% }); %>
+
+
+
+
+        <form class = "item" action = "/add" method = "post">
+          <input type = "text" id = "newTask" name = "task"  placeholder = "New Task" autocomplete="off">
+          <button type = "submit" id = "submitButton" name = "submit"> + </button>
+          </form>
+
+      </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+html {
+  background-color: #d6e4f0;
+
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+.cityName{
+  color:#1e56a0
+}
+h1 {
+  color: #163172;
+  padding: 10px;
+  font-family:"Merriweather",serif;
+}
+
+h3{
+  color:#163172
+}
+
+#leftbox{
+  margin-top:0px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+
+#rightbox{
+  margin-top:0px;
+  float:right;
+  width:25%;
+  text-align: center;
+}
+
+#middlebox{
+  font-family: 'helvetica neue';
+  float:left;
+  width:50%;
+  text-align:center;
+}
+
+.hiddenMessage{
+  visibility:hidden;
+}
+#welcomeMessage{
+  border-top: 0px;
+  font-size: 250%;
+  color: #1e56a0;
+  font-family:"Merriweather",serif;
+}
+.nameAndTime{
+  position:relative;
+  width: 25%;
+  display: inline;
+  text-align:left;
+
+}
+
+.nameTime{
+  text-align: left;
+  display: inline;
+}
+
+.cityName{
+  margin: 2px;
+  font-size: 300%;
+}
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #f6f6f6;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #112d4e;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3f72af;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3f72af;
+}
+
+.initForm {
+  max-width: 400px;
+  margin: 50px auto;
+  background: blue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.initForm:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
